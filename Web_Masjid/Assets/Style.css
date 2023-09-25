@@ -2,49 +2,69 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(255, 255, 255);
-  /* border: 1px solid red; */
-}
-
-header,
-footer {
-  background-color: green;
-  position: relative;
-}
-
-ul {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  border: none;
   list-style-type: none;
 }
 
-li a {
-  text-decoration: none;
+:root {
+  --primaryColor: #2e8b57;
+  --secondaryColor: white;
+}
+
+body {
+  height: 100vh;
+}
+
+/* Header & Navbar */
+header {
+  background-color: var(--primaryColor);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  color: rgb(255, 255, 255);
-  font-size: 0.7em;
 }
 
-li a:hover {
-  text-decoration: underline;
-}
-
-#info,
 ul,
 nav {
   display: flex;
   justify-content: center;
+  align-items: center;
+  color: var(--secondaryColor);
 }
 
-ul li {
+nav h4 {
+  font-weight: bold;
+}
+
+nav ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondaryColor);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul li {
   padding: 0 20px;
-  margin: 10px;
+  margin-top: 5px;
 }
 
-#logo {
+#logoSosmed {
   position: absolute;
   right: 0;
+}
+
+/* Main Content */
+/* 1. First Content */
+#firstContent {
+  height: 500px;
+  position: relative;
 }
 
 .carousel-item img {
@@ -53,39 +73,17 @@ ul li {
   object-position: top;
 }
 
-body {
-  height: 100vh;
-}
-
-td {
-  padding: 0 5px;
-}
-
-#footer_bawah {
-  display: flex;
-  justify-content: space-between;
-}
-
-form {
+#popup {
   display: flex;
   flex-direction: column;
-  position: relative;
-}
-
-#logo2 {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-#popup {
   position: absolute;
-  width: 400px;
+  max-width: 350px;
   height: 250px;
   z-index: 1;
-  top: 0;
-  background-color: rgba(41, 51, 51, 0.349);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.521);
+  top: 100px;
+  left: 20px;
+  background-color: rgba(6, 6, 6, 0.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   padding: 10px;
   color: rgb(255, 255, 255);
@@ -93,9 +91,12 @@ form {
 
 #quotes {
   color: white;
+  height: 100%;
 }
 
 #popup button {
+  border: 1px solid var(--secondaryColor);
+  margin: 0 10px;
   padding: 5px;
   border-radius: 7px;
   background-color: rgba(89, 95, 90, 0.39);
@@ -103,11 +104,89 @@ form {
   color: white;
 }
 
-article {
-  position: relative;
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primaryColor);
+  padding: 10px 0;
 }
 
-#logo img,
-#logo2 img {
+#footer_bawah {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+}
+
+#footer_bawah div h6 {
+  font-weight: bold;
+  color: var(--secondaryColor);
+}
+
+#footer_bawah > div img {
+  margin: 30px 0 0 0;
+}
+
+td {
+  color: var(--secondaryColor);
+}
+
+tr > td {
+  padding-right: 20px;
+}
+
+.footerFotos img {
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: var(--secondaryColor);
+}
+
+form h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+textarea {
+  background-color: var(--primaryColor);
+  border: 1px solid var(--secondaryColor);
+  padding: 5px;
+  color: var(--secondaryColor);
+}
+
+form button {
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  border-radius: 7px;
+  margin: 10px 0;
+  width: 80px;
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+#logoSosmed1 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* classes */
+.info {
+  color: var(--secondaryColor);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 700px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.sosmedLogo {
   height: 30px;
 }
