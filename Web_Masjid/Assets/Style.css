@@ -6,15 +6,13 @@
   font-size: 14px;
   border: none;
   list-style-type: none;
+  transition: all 0.1s ease;
+  user-select: none;
 }
 
 :root {
   --primaryColor: #2e8b57;
   --secondaryColor: white;
-}
-
-body {
-  height: 100vh;
 }
 
 /* Header & Navbar */
@@ -23,6 +21,18 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header div {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  background-color: var(--primaryColor);
 }
 
 ul,
@@ -44,24 +54,35 @@ nav ul li a {
   color: var(--secondaryColor);
   font-weight: bold;
   text-decoration: none;
+  border-bottom: 3px solid transparent;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  border-bottom: 3px solid var(--secondaryColor);
 }
 
 nav ul li {
-  padding: 0 20px;
+  padding: 5px 20px;
   margin-top: 5px;
 }
 
 #logoSosmed {
   position: absolute;
-  right: 0;
+  right: 20px;
+  cursor: pointer;
+}
+
+#logoSosmed img:hover {
+  scale: 1.1;
 }
 
 /* Main Content */
 /* 1. First Content */
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 #firstContent {
   height: 500px;
   position: relative;
@@ -89,6 +110,10 @@ nav ul li {
   color: rgb(255, 255, 255);
 }
 
+#popup h2 {
+  font-weight: bold;
+}
+
 #quotes {
   color: white;
   height: 100%;
@@ -103,6 +128,16 @@ nav ul li {
   width: 140px;
   color: white;
 }
+
+#popup button:hover {
+  background-color: rgba(193, 192, 192, 0.39);
+}
+
+/* 2. Second Content */
+/* #secondContent,
+#thirdContent {
+  height: 500px;
+} */
 
 /* Footer */
 footer {
@@ -129,12 +164,17 @@ footer {
   margin: 30px 0 0 0;
 }
 
-td {
+td a {
   color: var(--secondaryColor);
+  text-decoration: none;
 }
 
 tr > td {
   padding-right: 20px;
+}
+
+td a:hover {
+  color: rgb(180, 251, 180);
 }
 
 .footerFotos img {
@@ -170,10 +210,23 @@ form button {
   font-weight: bold;
 }
 
+form button:hover {
+  scale: 1.03;
+}
+
 #logoSosmed1 {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  cursor: pointer;
+}
+
+#logoSosmed1 img {
+  margin: 0 2.5px;
+}
+
+#logoSosmed1 img:hover {
+  scale: 1.1;
 }
 
 /* classes */
