@@ -181,6 +181,54 @@ main {
   padding-bottom: 10px;
 }
 
+/* 3. Third Content */
+#thirdContent {
+  height: 90vh;
+  background-image: url("./img/Masjid\ Raya\ Baiturrahman.jpg");
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-color: var(--primaryColor);
+  background-blend-mode: multiply;
+  color: var(--secondaryColor);
+  display: flex;
+  justify-content: space-around;
+}
+
+#thirdContent section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+#thirdContent section:nth-child(1) {
+  margin-top: 100px;
+}
+
+#thirdContent h2,
+#thirdContent h5 {
+  font-weight: bold;
+}
+
+#thirdContent section table {
+  margin-top: 10px;
+}
+
+#thirdContent td,
+#thirdContent th {
+  font-weight: bold;
+  font-size: 18px;
+  border: 1px solid var(--secondaryColor);
+  padding: 10px;
+}
+
+#thirdContent section table tr th {
+  text-align: center;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
 /* Footer */
 footer {
   display: flex;
