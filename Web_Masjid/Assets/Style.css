@@ -43,6 +43,16 @@ nav {
   box-shadow: 0 2px 4px rgba(104, 104, 104, 0.8);
 }
 
+ul a {
+  color: var(--secondaryColor);
+  text-decoration: none;
+}
+
+ul a:hover {
+  color: rgb(180, 251, 180);
+  border-bottom: 3px solid rgb(180, 251, 180);
+}
+
 ul,
 nav {
   display: flex;
@@ -109,7 +119,7 @@ main {
   max-width: 350px;
   height: 250px;
   z-index: 1;
-  top: 100px;
+  top: 120px;
   left: 20px;
   background-color: rgba(6, 6, 6, 0.4);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
@@ -142,7 +152,7 @@ main {
 }
 
 /* 2. Second Content */
-#secondContent {
+#jadwal {
   height: 90vh;
   background-image: url("./img/Masjid\ Raya\ Baiturrahman.jpg");
   background-clip: border-box;
@@ -151,38 +161,39 @@ main {
   background-blend-mode: multiply;
   color: var(--secondaryColor);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 10%;
 }
 
-#secondContent section:nth-child(2) {
+#jadwal section:nth-child(2) {
   align-self: center;
 }
 
-#secondContent section:nth-child(1),
-#secondContent section:nth-child(3) {
+#jadwal section:nth-child(1),
+#jadwal section:nth-child(3) {
   margin-top: 100px;
 }
 
-#secondContent h2,
-#secondContent h5,
-#secondContent h4 {
+#jadwal h2,
+#jadwal h5,
+#jadwal h4 {
   font-weight: bold;
 }
 
-#secondContent td,
-#secondContent th {
+#jadwal td,
+#jadwal th {
   font-weight: bold;
   font-size: 18px;
 }
 
-#secondContent table tr th:first-child {
+#jadwal table tr th:first-child {
   text-align: center;
   padding-right: 200px;
   padding-bottom: 10px;
 }
 
 /* 3. Third Content */
-#thirdContent {
+#kalender {
   height: 90vh;
   background-image: url("./img/Masjid\ Raya\ Baiturrahman.jpg");
   background-clip: border-box;
@@ -191,10 +202,11 @@ main {
   background-blend-mode: multiply;
   color: var(--secondaryColor);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 10%;
 }
 
-#thirdContent section:nth-child(2) {
+#kalender section:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -202,31 +214,222 @@ main {
   align-self: center;
 }
 
-#thirdContent section:nth-child(1) {
+#kalender section:nth-child(1) {
   margin-top: 100px;
 }
 
-#thirdContent h2,
-#thirdContent h5 {
+#kalender h2,
+#kalender h5 {
   font-weight: bold;
 }
 
-#thirdContent section table {
+#kalender section table {
   margin-top: 10px;
 }
 
-#thirdContent td,
-#thirdContent th {
+#kalender tr th:nth-child(2),
+#kalender tr td:nth-child(2) {
+  color: orange;
+}
+
+#kalender td,
+#kalender th {
   font-weight: bold;
   font-size: 18px;
   border: 1px solid var(--secondaryColor);
   padding: 10px;
 }
 
-#thirdContent section table tr th {
+#kalender sup {
+  font-weight: lighter;
+  font-size: small;
+}
+
+#kalender section table tr th {
   text-align: center;
   padding-right: 20px;
   padding-bottom: 10px;
+}
+
+/* 4. Fourth Content */
+#program {
+  height: 90vh;
+  background-image: url("./img/Masjid\ Raya\ Baiturrahman.jpg");
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-color: var(--primaryColor);
+  background-blend-mode: multiply;
+  color: var(--secondaryColor);
+  padding: 0 10%;
+}
+
+#program section:nth-child(1) {
+  margin-top: 100px;
+}
+
+#program h2,
+#program h5,
+#program p {
+  font-weight: bold;
+}
+
+#program h5 {
+  line-height: 25px;
+}
+
+#program p {
+  padding: 30px 0;
+}
+
+/* 5. materi */
+#materi {
+  height: 90vh;
+  background-image: url("./img/Masjid\ Raya\ Baiturrahman.jpg");
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-color: var(--primaryColor);
+  background-blend-mode: multiply;
+  color: var(--secondaryColor);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+#materi section:nth-child(1) {
+  margin-top: 100px;
+}
+
+#materi section:nth-child(2) {
+  align-self: center;
+}
+
+#materi h2,
+#materi h5,
+#materi p {
+  font-weight: bold;
+}
+
+#materi h5 {
+  line-height: 25px;
+}
+
+#materi img {
+  margin: 20px 0;
+}
+
+/* 6. pengurus */
+#pengurus {
+  height: 90vh;
+  background-image: url("./img/Masjid\ Raya\ Baiturrahman.jpg");
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-color: var(--primaryColor);
+  background-blend-mode: multiply;
+  color: var(--secondaryColor);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+#pengurus section:nth-child(1) {
+  margin-top: 100px;
+}
+
+#pengurus section:nth-child(2) {
+  align-self: center;
+}
+
+#pengurus h2,
+#pengurus h5,
+#pengurus p {
+  font-weight: bold;
+}
+
+#pengurus h5 {
+  line-height: 25px;
+}
+
+.containerDaftar,
+.daftarUstadz,
+.daftarPengurus {
+  display: flex;
+}
+
+.daftarUstadz,
+.daftarPengurus {
+  justify-content: space-between;
+}
+
+.profilPengurus {
+  width: 300px;
+}
+
+.profilPengurus img {
+  margin-bottom: 10px;
+}
+
+.containerDaftar {
+  justify-content: space-between;
+  width: 80vw;
+  margin-top: 20px;
+}
+
+.daftar {
+  width: 600px;
+}
+
+/* 8. tentang */
+#tentang {
+  height: 90vh;
+  background-image: url("./img/Masjid\ Raya\ Baiturrahman.jpg");
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-color: var(--primaryColor);
+  background-blend-mode: multiply;
+  color: var(--secondaryColor);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+#tentang section:nth-child(1) {
+  margin-top: 100px;
+}
+
+#tentang section:nth-child(2) {
+  align-self: center;
+}
+
+#tentang h2,
+#tentang h5,
+#tentang p {
+  font-weight: bold;
+}
+
+#tentang h5 {
+  line-height: 25px;
+}
+
+figure {
+  float: right;
+  padding: 10px;
+}
+
+figcaption {
+  text-align: center;
+}
+
+.fotoPendiri {
+  margin-bottom: 10px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+}
+
+.container2 p {
+  height: 150px;
 }
 
 /* Footer */
