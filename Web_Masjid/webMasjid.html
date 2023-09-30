@@ -162,41 +162,41 @@
             </tr>
             <tr>
               <td>Imsyak</td>
-              <td>04:32</td>
+              <td id="imsyak">04:32</td>
             </tr>
             <tr>
               <td>Subuh</td>
-              <td>04:32</td>
+              <td id="subuh">04:32</td>
             </tr>
             <tr>
               <td>Terbit</td>
-              <td>04:32</td>
+              <td id="terbit">04:32</td>
             </tr>
             <tr>
               <td>Dhuha</td>
-              <td>04:32</td>
+              <td id="dhuha">04:32</td>
             </tr>
             <tr>
               <td>Dzuhur</td>
-              <td>04:32</td>
+              <td id="dzuhur">04:32</td>
             </tr>
             <tr>
               <td>Ashar</td>
-              <td>04:32</td>
+              <td id="ashar">04:32</td>
             </tr>
             <tr>
               <td>Maghrib</td>
-              <td>04:32</td>
+              <td id="maghrib">04:32</td>
             </tr>
             <tr>
               <td>Isya</td>
-              <td>04:32</td>
+              <td id="isya">04:32</td>
             </tr>
           </table>
         </section>
         <section>
           <h4>Tanggal</h4>
-          <h4>19 / 07 / 2024</h4>
+          <h4 id="jsTanggal">19 / 07 / 2024</h4>
         </section>
       </article>
       <article id="kalender">
@@ -287,13 +287,14 @@
                 <h5>Daftar Pengurus</h5>
                 <div class="daftarPengurus">
                   <div>
-                    <select name="country">
-                      <option value="indonesia">Indonesia</option>
-                      <option value="malaysia">Malaysia</option>
-                      <option value="singapura">Singapura</option>
+                    <select name="pPengurus" id="pPengurus">
+                      <option value="#" selected>Pilih Nama Pengurus</option>
+                      <option value="Asep">Asep</option>
+                      <option value="Bagus">Bagus</option>
+                      <option value="Trio">Trio</option>
                     </select>
                   </div>
-                  <div class="profilPengurus">
+                  <div class="profil">
                     <img src="./Assets/img/fotoFooterr.png" alt="foto" width="100px" height="120px" >
                     <h5>Nama Pengurus</h5>
                     <h5>Alamat</h5>
@@ -304,13 +305,14 @@
                 <h5>Daftar Ustadz</h5>
                 <div class="daftarUstadz">
                   <div>
-                    <select name="country">
-                      <option value="indonesia">Indonesia</option>
-                      <option value="malaysia">Malaysia</option>
-                      <option value="singapura">Singapura</option>
+                    <select name="pUstadz" id="pUstadz">
+                      <option value="#" selected>Pilih Nama Ustadz</option>
+                      <option value="UAH">UAH</option>
+                      <option value="UAS">UAS</option>
+                      <option value="Habib Jafar">Habib Jafar</option>
                     </select>
                   </div>
-                  <div class="profilPengurus">
+                  <div class="profil">
                     <img src="./Assets/img/fotoFooterr.png" alt="foto" width="100px" height="120px">
                     <h5>Nama Ustadz</h5>
                     <h5>Alamat</h5>
@@ -365,7 +367,6 @@
                       <img src="./Assets/img/fotoFooterr.png" alt="foto">
                       <figcaption>Nama</figcaption>
                     </figure>
-                  
                   </div>
                 </div>
                 <div>
@@ -445,5 +446,8 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./Assets/data.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

@@ -76,7 +76,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  border-bottom: 3px solid var(--secondaryColor);
+  border-bottom: 3px solid rgb(180, 251, 180);
 }
 
 nav ul li {
@@ -117,10 +117,10 @@ main {
   flex-direction: column;
   position: absolute;
   max-width: 350px;
-  height: 250px;
+  height: 200px;
   z-index: 1;
-  top: 120px;
-  left: 20px;
+  top: 200px;
+  left: 40px;
   background-color: rgba(6, 6, 6, 0.4);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
   border-radius: 10px;
@@ -359,11 +359,11 @@ main {
   justify-content: space-between;
 }
 
-.profilPengurus {
+.profil {
   width: 300px;
 }
 
-.profilPengurus img {
+.profil img {
   margin-bottom: 10px;
 }
 
