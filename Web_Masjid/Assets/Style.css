@@ -232,6 +232,15 @@ main {
   color: orange;
 }
 
+#kalender tr th:nth-child(7),
+#kalender tr td:nth-child(7) {
+  color: rgb(104, 243, 49);
+}
+
+.previewMonth {
+  color: grey;
+}
+
 #kalender td,
 #kalender th {
   font-weight: bold;
@@ -250,6 +259,7 @@ main {
   padding-right: 20px;
   padding-bottom: 10px;
 }
+
 
 /* 4. Fourth Content */
 #program {
@@ -330,6 +340,7 @@ main {
   justify-content: space-between;
   padding: 0 10%;
 }
+
 #pengurus section:nth-child(1) {
   margin-top: 100px;
 }
@@ -430,6 +441,7 @@ figcaption {
 
 .container2 p {
   height: 150px;
+
 }
 
 /* Footer */
@@ -454,7 +466,7 @@ footer {
   color: var(--secondaryColor);
 }
 
-#footer_bawah > div img {
+#footer_bawah>div img {
   margin: 25px 0 0 0;
 }
 
@@ -463,7 +475,7 @@ td a {
   text-decoration: none;
 }
 
-tr > td {
+tr>td {
   padding-right: 20px;
 }
 

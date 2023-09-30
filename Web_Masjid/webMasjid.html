@@ -1,453 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website Masjid Ar-Rahman</title>
 
-    <!-- Styling -->
-    <link rel="stylesheet" href="./Assets/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Masjid Ar-Rahman</title>
 
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+  <!-- Styling -->
+  <link rel="stylesheet" href="./Assets/style.css" />
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Nunito+Sans&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-  <body>
-    <header>
-      <div class="info">
-        <ul class="info">
-          <li>Telepon : <a href="https://wa.me/6285872988649">085872988649</a></li>
-          <li>Email : egasulanjana18@gmail.com</li>
-          <li>Lokasi : Bandung</li>
-        </ul>
-        <div id="logoSosmed">
-          <img
-            class="sosmedLogo"
-            src="./Assets/logo/Facebook.png"
-            alt="logo fb"
-          />
-          <img
-            class="sosmedLogo"
-            src="./Assets/logo/Instagram.png"
-            alt="logo ig"
-          />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Nunito+Sans&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="info">
+      <ul class="info">
+        <li>Telepon : <a href="https://wa.me/6285872988649">085872988649</a></li>
+        <li>Email : egasulanjana18@gmail.com</li>
+        <li>Lokasi : Bandung</li>
+      </ul>
+      <div id="logoSosmed">
+        <img class="sosmedLogo" src="./Assets/logo/Facebook.png" alt="logo fb" />
+        <img class="sosmedLogo" src="./Assets/logo/Instagram.png" alt="logo ig" />
+      </div>
+    </div>
+    <nav>
+      <h4>MASJID AR-RAHMAN</h4>
+      <ul>
+        <li>
+          <a href="#beranda">Beranda</a>
+        </li>
+        <li>
+          <a href="#jadwal">Jadwal Shalat</a>
+        </li>
+        <li>
+          <a href="#kalender">Kalender Hijriah</a>
+        </li>
+        <li>
+          <a href="#program">Program Acara</a>
+        </li>
+        <li>
+          <a href="#materi">Materi Kajian</a>
+        </li>
+        <li>
+          <a href="#pengurus">Pengurus</a>
+        </li>
+        <li>
+          <a href="#infaq">infaq</a>
+        </li>
+        <li>
+          <a href="#tentang">Tentang</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article id="beranda">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000" height="50px">
+            <img src="./Assets/img/Gambar-masjid-44-1.JPG" class="d-block w-100" alt="Masjid" />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./Assets/img/masjid-aljabar-laris-manis-3.jpg" class="d-block w-100" alt="Masjid Al Jabbar" />
+          </div>
+          <div class="carousel-item">
+            <img src="./Assets/img/Masjid Raya Baiturrahman.jpg" class="d-block w-100" alt="Masjid Raya Baiturrahman" />
+          </div>
         </div>
       </div>
-      <nav>
-        <h4>MASJID AR-RAHMAN</h4>
-        <ul>
-          <li>
-            <a href="#beranda">Beranda</a>
-          </li>
-          <li>
-            <a href="#jadwal">Jadwal Shalat</a>
-          </li>
-          <li>
-            <a href="#kalender">Kalender Hijriah</a>
-          </li>
-          <li>
-            <a href="#program">Program Acara</a>
-          </li>
-          <li>
-            <a href="#materi">Materi Kajian</a>
-          </li>
-          <li>
-            <a href="#pengurus">Pengurus</a>
-          </li>
-          <li>
-            <a href="#infaq">infaq</a>
-          </li>
-          <li>
-            <a href="#tentang">Tentang</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <article id="beranda">
-        <div
-          id="carouselExampleInterval"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleInterval"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleInterval"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleInterval"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div
-              class="carousel-item active"
-              data-bs-interval="10000"
-              height="50px"
-            >
-              <img
-                src="./Assets/img/Gambar-masjid-44-1.JPG"
-                class="d-block w-100"
-                alt="Masjid"
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img
-                src="./Assets/img/masjid-aljabar-laris-manis-3.jpg"
-                class="d-block w-100"
-                alt="Masjid Al Jabbar"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./Assets/img/Masjid Raya Baiturrahman.jpg"
-                class="d-block w-100"
-                alt="Masjid Raya Baiturrahman"
-              />
-            </div>
-          </div>
+      <div id="popup">
+        <h2>Quote Hari Ini</h2>
+        <p id="quotes">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          odio, dicta repudiandae architecto possimus, reprehenderit quam
+          eligendi nesciunt, suscipit iusto natus mollitia? Cumque, fugit.
+          Porro quo labore blanditiis ipsam voluptas?
+        </p>
+        <div>
+          <button>Hubungi</button>
+          <button>Sejarah Masjid</button>
         </div>
-        <div id="popup">
-          <h2>Quote Hari Ini</h2>
-          <p id="quotes">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            odio, dicta repudiandae architecto possimus, reprehenderit quam
-            eligendi nesciunt, suscipit iusto natus mollitia? Cumque, fugit.
-            Porro quo labore blanditiis ipsam voluptas?
-          </p>
-          <div>
-            <button>Hubungi</button>
-            <button>Sejarah Masjid</button>
-          </div>
-        </div>
-      </article>
-      <article id="jadwal">
-        <section>
-          <h2>Jadwal Salat</h3>
+      </div>
+    </article>
+    <article id="jadwal">
+      <section>
+        <h2>Jadwal Salat</h3>
           <h5>Lokasi Masjid</h5>
           <h5>Bandung</h5>
-        </section>
-        <section>
-          <table>
-            <tr>
-              <th>Waktu Salat</th>
-              <th>Jam</th>
-            </tr>
-            <tr>
-              <td>Imsyak</td>
-              <td id="imsyak">04:32</td>
-            </tr>
-            <tr>
-              <td>Subuh</td>
-              <td id="subuh">04:32</td>
-            </tr>
-            <tr>
-              <td>Terbit</td>
-              <td id="terbit">04:32</td>
-            </tr>
-            <tr>
-              <td>Dhuha</td>
-              <td id="dhuha">04:32</td>
-            </tr>
-            <tr>
-              <td>Dzuhur</td>
-              <td id="dzuhur">04:32</td>
-            </tr>
-            <tr>
-              <td>Ashar</td>
-              <td id="ashar">04:32</td>
-            </tr>
-            <tr>
-              <td>Maghrib</td>
-              <td id="maghrib">04:32</td>
-            </tr>
-            <tr>
-              <td>Isya</td>
-              <td id="isya">04:32</td>
-            </tr>
-          </table>
-        </section>
-        <section>
-          <h4>Tanggal</h4>
-          <h4 id="jsTanggal">19 / 07 / 2024</h4>
-        </section>
-      </article>
-      <article id="kalender">
-        <section>
-          <h2>Kalender Hijriah</h3>
-        </section>
-        <section>
-          <h5>Bulan Hijriah 1445 <sup>Bulan Masehi 2024</sup></h5>
-          <div id="calender"></div>
-          <table>
-            <tr>
-              <th></th>
-              <th>Ahad</th>
-              <th>Senin</th>
-              <th>Selasa</th>
-              <th>Rabu</th>
-              <th>Kamis</th>
-              <th>Jum'at</th>
-              <th>Sabtu</th>
-            </tr>
-            <tr>
-              <td>Hijriah <sup>Masehi</sup></td>
-              <td>12 <sup>30</sup></td>
-              <td>13 <sup>1</sup></td>
-              <td>14 <sup>2</sup></td>
-              <td>15 <sup>3</sup></td>
-              <td>16 <sup>4</sup></td>
-              <td>17 <sup>5</sup></td>
-              <td>18 <sup>6</sup></td>
-            </tr>
-            <tr>
-              <td>Hijriah <sup>Masehi</sup></td>
-              <td>12 <sup>30</sup></td>
-              <td>13 <sup>1</sup></td>
-              <td>14 <sup>2</sup></td>
-              <td>15 <sup>3</sup></td>
-              <td>16 <sup>4</sup></td>
-              <td>17 <sup>5</sup></td>
-              <td>18 <sup>6</sup></td>
-            </tr>
-            <tr>
-              <td>Hijriah <sup>Masehi</sup></td>
-              <td>12 <sup>30</sup></td>
-              <td>13 <sup>1</sup></td>
-              <td>14 <sup>2</sup></td>
-              <td>15 <sup>3</sup></td>
-              <td>16 <sup>4</sup></td>
-              <td>17 <sup>5</sup></td>
-              <td>18 <sup>6</sup></td>
-            </tr>
-            <tr>
-              <td>Hijriah <sup>Masehi</sup></td>
-              <td>12 <sup>30</sup></td>
-              <td>13 <sup>1</sup></td>
-              <td>14 <sup>2</sup></td>
-              <td>15 <sup>3</sup></td>
-              <td>16 <sup>4</sup></td>
-              <td>17 <sup>5</sup></td>
-              <td>18 <sup>6</sup></td>
-            </tr>
-          </table>
-        </section>
-      </article>
-      <article id="program">
-        <section>
-          <h2>Acara</h2>
-            <h5>Tanggal Hari-hari Besar <br>Tahun Baru Islam 1445 <br> 19 Juli 2023 <br>01 Muharam 1445</h5>
-            <p>Sunnah yang baik dilakukan<br>Dalil Al-Qur'an dan Hadits <br> ...</p>
-        </section>
-      </article>
-      <article id="materi">
-        <section>
-          <h2>Materi Kajian</h2>
-            <h5>Hari & Tanggal<br>Nama Acara <br> Nama Ustadz</h5>
-            <img src="./Assets/img/fotoFooterr.png" alt="FotoUstadz" height="125" width="100">
-            <h5>Tema/Topik</h5>
-            <p>...</p>
-        </section>
-        <section>
-          <video controls src="" width="700px"></video>
-        </section>
-      </article>
-      <article id="pengurus">
-        <section>
-          <h2>Daftar Ustadz dan Kepengurusan</h2>
-            <div class="containerDaftar">
-              <div class="daftar">
-                <h5>Daftar Pengurus</h5>
-                <div class="daftarPengurus">
-                  <div>
-                    <select name="pPengurus" id="pPengurus">
-                      <option value="#" selected>Pilih Nama Pengurus</option>
-                      <option value="Asep">Asep</option>
-                      <option value="Bagus">Bagus</option>
-                      <option value="Trio">Trio</option>
-                    </select>
-                  </div>
-                  <div class="profil">
-                    <img src="./Assets/img/fotoFooterr.png" alt="foto" width="100px" height="120px" >
-                    <h5>Nama Pengurus</h5>
-                    <h5>Alamat</h5>
-                  </div>
-                </div>
+      </section>
+      <section>
+        <table>
+          <tr>
+            <th>Waktu Salat</th>
+            <th>Jam</th>
+          </tr>
+          <tr>
+            <td>Imsyak</td>
+            <td id="imsyak">04:32</td>
+          </tr>
+          <tr>
+            <td>Subuh</td>
+            <td id="subuh">04:32</td>
+          </tr>
+          <tr>
+            <td>Terbit</td>
+            <td id="terbit">04:32</td>
+          </tr>
+          <tr>
+            <td>Dhuha</td>
+            <td id="dhuha">04:32</td>
+          </tr>
+          <tr>
+            <td>Dzuhur</td>
+            <td id="dzuhur">04:32</td>
+          </tr>
+          <tr>
+            <td>Ashar</td>
+            <td id="ashar">04:32</td>
+          </tr>
+          <tr>
+            <td>Maghrib</td>
+            <td id="maghrib">04:32</td>
+          </tr>
+          <tr>
+            <td>Isya</td>
+            <td id="isya">04:32</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h4>Tanggal</h4>
+        <h4 id="jsTanggal">19 / 07 / 2024</h4>
+      </section>
+    </article>
+    <article id="kalender">
+      <section>
+        <h2>Kalender Hijriah</h3>
+      </section>
+      <section>
+        <h5>Bulan Hijriah 1445 <sup>Bulan Masehi 2023</sup></h5>
+        <div id="calender"></div>
+        <table>
+          <tr>
+            <th>Rabi'ul Awal <sup>September - Oktober</sup></th>
+            <th>Ahad</th>
+            <th>Senin</th>
+            <th>Selasa</th>
+            <th>Rabu</th>
+            <th>Kamis</th>
+            <th>Jum'at</th>
+            <th>Sabtu</th>
+          </tr>
+          <tr>
+            <td>Hijriah <sup>Masehi</sup></td>
+            <td>1 <sup>17</sup></td>
+            <td>2 <sup>18</sup></td>
+            <td>3 <sup>19</sup></td>
+            <td>4 <sup>20</sup></td>
+            <td>5 <sup>21</sup></td>
+            <td>6 <sup>22</sup></td>
+            <td>7 <sup>23</sup></td>
+          </tr>
+          <tr>
+            <td>Hijriah <sup>Masehi</sup></td>
+            <td>8 <sup>24</sup></td>
+            <td>9 <sup>25</sup></td>
+            <td>10 <sup>26</sup></td>
+            <td>11 <sup>27</sup></td>
+            <td>12 <sup>28</sup></td>
+            <td>13 <sup>29</sup></td>
+            <td>14 <sup>30</sup></td>
+          </tr>
+          <tr>
+            <td>Hijriah <sup>Masehi</sup></td>
+            <td>15 <sup>1</sup></td>
+            <td>16 <sup>2</sup></td>
+            <td>17 <sup>3</sup></td>
+            <td>18 <sup>4</sup></td>
+            <td>19 <sup>5</sup></td>
+            <td>20 <sup>6</sup></td>
+            <td>21 <sup>7</sup></td>
+          </tr>
+          <tr>
+            <td>Hijriah <sup>Masehi</sup></td>
+            <td>22 <sup>8</sup></td>
+            <td>23 <sup>9</sup></td>
+            <td>24 <sup>10</sup></td>
+            <td>25 <sup>11</sup></td>
+            <td>26 <sup>12</sup></td>
+            <td>27 <sup>13</sup></td>
+            <td>28 <sup>14</sup></td>
+          </tr>
+          <tr>
+            <td>Hijriah <sup>Masehi</sup></td>
+            <td>29 <sup>15</sup></td>
+            <td class="previewMonth">1 <sup>16</sup></td>
+            <td class="previewMonth">2 <sup>17</sup></td>
+            <td class="previewMonth">3 <sup>18</sup></td>
+            <td class="previewMonth">4 <sup>19</sup></td>
+            <td class="previewMonth">5 <sup>20</sup></td>
+            <td class="previewMonth">6 <sup>21</sup></td>
+          </tr>
+        </table>
+      </section>
+    </article>
+    <article id="program">
+      <section>
+        <h2>Acara</h2>
+        <h5>Tanggal Hari-hari Besar <br>Tahun Baru Islam 1445 <br> 19 Juli 2023 <br>01 Muharam 1445</h5>
+        <p>Sunnah yang baik dilakukan<br>Dalil Al-Qur'an dan Hadits <br> ...</p>
+      </section>
+    </article>
+    <article id="materi">
+      <section>
+        <h2>Materi Kajian</h2>
+        <h5>Hari & Tanggal<br>Nama Acara <br> Nama Ustadz</h5>
+        <img src="./Assets/img/fotoFooterr.png" alt="FotoUstadz" height="125" width="100">
+        <h5>Tema/Topik</h5>
+        <p>...</p>
+      </section>
+      <section>
+        <video controls src="" width="700px"></video>
+      </section>
+    </article>
+    <article id="pengurus">
+      <section>
+        <h2>Daftar Ustadz dan Kepengurusan</h2>
+        <div class="containerDaftar">
+          <div class="daftar">
+            <h5>Daftar Pengurus</h5>
+            <div class="daftarPengurus">
+              <div>
+                <select name="pPengurus" id="pPengurus">
+                  <option value="#" selected>Pilih Nama Pengurus</option>
+                  <option value="Asep">Asep</option>
+                  <option value="Bagus">Bagus</option>
+                  <option value="Trio">Trio</option>
+                </select>
               </div>
-              <div class="daftar">
-                <h5>Daftar Ustadz</h5>
-                <div class="daftarUstadz">
-                  <div>
-                    <select name="pUstadz" id="pUstadz">
-                      <option value="#" selected>Pilih Nama Ustadz</option>
-                      <option value="UAH">UAH</option>
-                      <option value="UAS">UAS</option>
-                      <option value="Habib Jafar">Habib Jafar</option>
-                    </select>
-                  </div>
-                  <div class="profil">
-                    <img src="./Assets/img/fotoFooterr.png" alt="foto" width="100px" height="120px">
-                    <h5>Nama Ustadz</h5>
-                    <h5>Alamat</h5>
-                  </div>
-                </div>
+              <div class="profil">
+                <img src="./Assets/img/fotoFooterr.png" alt="foto" width="100px" height="120px">
+                <h5>Nama Pengurus</h5>
+                <h5>Alamat</h5>
               </div>
             </div>
-        </section>
-      </article>
-      <article id="tentang">
-        <section>
-          <h2>Tentang Ar-Rahman</h2>
-            <div class="container1">
-              <div class="container2">
-                <div>
-                  <h5>Sejarah Masjid</h5>
-                  <p>...</p>
-                </div>
-                <div>
-                  <h5>Biodata Pendiri Masjid</h5>
-                  <div>
-                    <img class="fotoPendiri" src="./Assets/img/fotoFooterr.png" alt="Foto" width="100px" height="120px">
-                  </div>
-                  <div>
-                    <h5>Nama :</h5>
-                    <h5>Alamat :</h5>
-                    <h5>TTL :</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="container2">
-                <div>
-                  <h5>Tokoh Masyarakat</h5>
-                  <div class="figure">
-                    <figure>
-                      <img src="./Assets/img/fotoFooterr.png" alt="foto">
-                      <figcaption>Nama</figcaption>
-                    </figure>
-                    <figure>
-                      <img src="./Assets/img/fotoFooterr.png" alt="foto">
-                      <figcaption>Nama</figcaption>
-                    </figure>
-                    <figure>
-                      <img src="./Assets/img/fotoFooterr.png" alt="foto">
-                      <figcaption>Nama</figcaption>
-                    </figure>
-                    <figure>
-                      <img src="./Assets/img/fotoFooterr.png" alt="foto">
-                      <figcaption>Nama</figcaption>
-                    </figure>
-                    <figure>
-                      <img src="./Assets/img/fotoFooterr.png" alt="foto">
-                      <figcaption>Nama</figcaption>
-                    </figure>
-                  </div>
-                </div>
-                <div>
-                  <h5>Foto Masjid</h5>
-                  <div>
-                    <img src="./Assets/img/fotoFooterr.png" alt="foto" width="200px">
-                    <img src="./Assets/img/fotoFooterr.png" alt="foto" width="200px">
-                    <img src="./Assets/img/fotoFooterr.png" alt="foto" width="200px">
-                    <img src="./Assets/img/fotoFooterr.png" alt="foto" width="200px">
-                  </div>
-                </div>
-              </div>
-            </div>
-        </section>
-      </article>
-    </main>
-
-    <footer>
-      <div class="info">
-        <ul class="info">
-          <li>Telepon : 085872988649</li>
-          <li>Email : egasulanjana18@gmail.com</li>
-          <li>Lokasi : Bandung</li>
-        </ul>
-      </div>
-      <div id="footer_bawah">
-        <div>
-          <h6>Tautan Cepat</h6>
-          <table>
-            <tr>
-              <td><a href="#jadwal">Jadwal Shalat</a></td>
-              <td><a href="#pengurus">Daftar Pengurus</a></td>
-            </tr>
-            <tr>
-              <td><a href="#kalender">Kalender Hijriah</a></td>
-              <td><a href="">Infaq</a></td>
-            </tr>
-            <tr>
-              <td><a href="#program">Acara</a></td>
-              <td><a href="#tentang">Tentang</a></td>
-            </tr>
-            <tr>
-              <td rowspan="1"><a href="#materi">Materi Khutbah</a></td>
-            </tr>
-          </table>
-          <img src="Assets/logo/logoFooter.png" alt="Logo" />
-        </div>
-        <div class="footerFotos">
-          <img src="./Assets/img/fotoFooterr.png" alt="Foto Masjid 1" />
-          <img src="./Assets/img/fotoFooterr.png" alt="Foto Masjid 2" />
-          <img src="./Assets/img/fotoFooterr.png" alt="Foto Masjid 3" />
-          <img src="./Assets/img/fotoFooterr.png" alt="Foto Masjid 4" />
-        </div>
-        <form>
-          <h6>Masukkan dan Saran</h6>
-          <textarea name="Saran" id="Saran" cols="30" rows="2"></textarea>
-          <button>Kirim</button>
-          <div id="logoSosmed1">
-            <img
-              class="sosmedLogo"
-              src="./Assets/logo/Facebook.png"
-              alt="logo fb"
-            />
-            <img
-              class="sosmedLogo"
-              src="./Assets/logo/Instagram.png"
-              alt="logo ig"
-            />
           </div>
-        </form>
+          <div class="daftar">
+            <h5>Daftar Ustadz</h5>
+            <div class="daftarUstadz">
+              <div>
+                <select name="pUstadz" id="pUstadz">
+                  <option value="#" selected>Pilih Nama Ustadz</option>
+                  <option value="UAH">UAH</option>
+                  <option value="UAS">UAS</option>
+                  <option value="Habib Jafar">Habib Jafar</option>
+                </select>
+              </div>
+              <div class="profil">
+                <img src="./Assets/img/fotoFooterr.png" alt="foto" width="100px" height="120px">
+                <h5>Nama Ustadz</h5>
+                <h5>Alamat</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    <article id="tentang">
+      <section>
+        <h2>Tentang Ar-Rahman</h2>
+        <div class="container1">
+          <div class="container2">
+            <div>
+              <h5>Sejarah Masjid</h5>
+              <p>...</p>
+            </div>
+            <div>
+              <h5>Biodata Pendiri Masjid</h5>
+              <div>
+                <img class="fotoPendiri" src="./Assets/img/fotoFooterr.png" alt="Foto" width="100px" height="120px">
+              </div>
+              <div>
+                <h5>Nama :</h5>
+                <h5>Alamat :</h5>
+                <h5>TTL :</h5>
+              </div>
+            </div>
+          </div>
+          <div class="container2">
+            <div>
+              <h5>Tokoh Masyarakat</h5>
+              <div class="figure">
+                <figure>
+                  <img src="./Assets/img/fotoFooterr.png" alt="foto">
+                  <figcaption>Nama</figcaption>
+                </figure>
+                <figure>
+                  <img src="./Assets/img/fotoFooterr.png" alt="foto">
+                  <figcaption>Nama</figcaption>
+                </figure>
+                <figure>
+                  <img src="./Assets/img/fotoFooterr.png" alt="foto">
+                  <figcaption>Nama</figcaption>
+                </figure>
+                <figure>
+                  <img src="./Assets/img/fotoFooterr.png" alt="foto">
+                  <figcaption>Nama</figcaption>
+                </figure>
+                <figure>
+                  <img src="./Assets/img/fotoFooterr.png" alt="foto">
+                  <figcaption>Nama</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div>
+              <h5>Foto Masjid</h5>
+              <div>
+                <img src="./Assets/img/fotoFooterr.png" alt="foto" width="200px">
+                <img src="./Assets/img/fotoFooterr.png" alt="foto" width="200px">
+                <img src="./Assets/img/fotoFooterr.png" alt="foto" width="200px">
+                <img src="./Assets/img/fotoFooterr.png" alt="foto" width="200px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <div class="info">
+      <ul class="info">
+        <li>Telepon : 085872988649</li>
+        <li>Email : egasulanjana18@gmail.com</li>
+        <li>Lokasi : Bandung</li>
+      </ul>
+    </div>
+    <div id="footer_bawah">
+      <div>
+        <h6>Tautan Cepat</h6>
+        <table>
+          <tr>
+            <td><a href="#jadwal">Jadwal Shalat</a></td>
+            <td><a href="#pengurus">Daftar Pengurus</a></td>
+          </tr>
+          <tr>
+            <td><a href="#kalender">Kalender Hijriah</a></td>
+            <td><a href="">Infaq</a></td>
+          </tr>
+          <tr>
+            <td><a href="#program">Acara</a></td>
+            <td><a href="#tentang">Tentang</a></td>
+          </tr>
+          <tr>
+            <td rowspan="1"><a href="#materi">Materi Khutbah</a></td>
+          </tr>
+        </table>
+        <img src="Assets/logo/logoFooter.png" alt="Logo" />
       </div>
-    </footer>
+      <div class="footerFotos">
+        <img src="./Assets/img/fotoFooterr.png" alt="Foto Masjid 1" />
+        <img src="./Assets/img/fotoFooterr.png" alt="Foto Masjid 2" />
+        <img src="./Assets/img/fotoFooterr.png" alt="Foto Masjid 3" />
+        <img src="./Assets/img/fotoFooterr.png" alt="Foto Masjid 4" />
+      </div>
+      <form>
+        <h6>Masukkan dan Saran</h6>
+        <textarea name="Saran" id="Saran" cols="30" rows="2"></textarea>
+        <button>Kirim</button>
+        <div id="logoSosmed1">
+          <img class="sosmedLogo" src="./Assets/logo/Facebook.png" alt="logo fb" />
+          <img class="sosmedLogo" src="./Assets/logo/Instagram.png" alt="logo ig" />
+        </div>
+      </form>
+    </div>
+  </footer>
 
-    <!-- Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
-    <script src="./Assets/data.js"></script>
-    <script src="index.js"></script>
-  </body>
+  <script src="./Assets/data.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
